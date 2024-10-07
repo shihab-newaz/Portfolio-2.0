@@ -1,11 +1,12 @@
 import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
 import { Inter as FontSans } from "next/font/google";
-import "./globals.css";
 import { DATA } from "@/data/resume";
-import ThemeProvider from "@/components/theme-provider";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { Navbar } from "@/components";
+import ThemeProvider from "@/components/theme-provider";
+import StructuredData from "@/components/StructuredData";
+import "./globals.css";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -19,6 +20,15 @@ export const metadata: Metadata = {
     template: `%s | ${DATA.name}`,
   },
   description: DATA.description,
+  keywords: [
+    "Shihab Newaz",
+    "Web Developer",
+    "Blockchain",
+    "Software Engineering",
+    "KUET",
+  ],
+  authors: [{ name: DATA.name }],
+  creator: DATA.name,
   openGraph: {
     title: DATA.name,
     description: DATA.description,
@@ -48,6 +58,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <StructuredData />
+      </head>
       <body
         className={cn(
           "min-h-screen  bg-background font-sans antialiased  mx-auto py-12 sm:py-24 px-6",
@@ -55,7 +68,8 @@ export default function RootLayout({
         )}
       >
         <ThemeProvider attribute="class" defaultTheme="system">
-          <TooltipProvider delayDuration={0}>{children}
+          <TooltipProvider delayDuration={0}>
+            {children}
             <Navbar />
           </TooltipProvider>
         </ThemeProvider>
