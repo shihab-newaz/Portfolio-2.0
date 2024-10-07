@@ -3,7 +3,7 @@ import { MetadataRoute } from 'next'
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
-      url: 'https://portfolio-2-0-lake-eight.vercel.app/',
+      url: 'https://shihab-newaz-portfolio.vercel.app/',
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 1,

@@ -5,7 +5,7 @@ const StructuredData = () => {
     "@context": "https://schema.org",
     "@type": "Person",
     "name": DATA.name,
-    "url": "https://portfolio-2-0-lake-eight.vercel.app/",
+    "url": "https://shihab-newaz-portfolio.vercel.app/",
     "sameAs": [
       DATA.contact.social.LinkedIn.url,
       DATA.contact.social.GitHub.url,

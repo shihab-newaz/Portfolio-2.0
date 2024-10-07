@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: '/private/',
     },
-    sitemap: 'https://portfolio-2-0-lake-eight.vercel.app//sitemap.xml',
+    sitemap: 'https://shihab-newaz-portfolio.vercel.app/sitemap.xml',
   }
 }
