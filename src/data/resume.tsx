@@ -122,6 +122,7 @@ export const DATA = {
       solved: "100+",
       icon: Icons.code,
       description: "Various programming challenges and contests",
+      url: "#",
     },
   },
   projects: [

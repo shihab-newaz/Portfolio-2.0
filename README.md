@@ -1,5 +1,5 @@
-# Portfolio [![Deploy with Vercel](https://vercel.com/button)]
-Built with next.js, [shadcn/ui](https://ui.shadcn.com/), and [magic ui](https://magicui.design/), deployed on Vercel.
+# Portfolio 
+Built with next.js, [shadcn/ui](https://ui.shadcn.com/), and [magic ui](https://magicui.design/), deployed on Vercel https://portfolio-2-0-lake-eight.vercel.app/
 
 # Features
 
